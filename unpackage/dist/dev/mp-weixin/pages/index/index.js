@@ -231,7 +231,68 @@ var _default =
         "img": "../../static/img/banner4.jpg" },
       {
         "id": 3,
-        "img": "../../static/img/banner5.jpg" }] };
+        "img": "../../static/img/banner5.jpg" }],
+
+      goods: [{
+        "id": 1,
+        "img": "../../static/img/goods1.jpg",
+        "beforeprice": "￥4299",
+        "price": "￥1299",
+        "name": "口红" },
+      {
+        "id": 2,
+        "img": "../../static/img/goods2.jpg",
+        "beforeprice": "￥6299",
+        "price": "￥3299",
+        "name": "奶粉" },
+      {
+        "id": 3,
+        "img": "../../static/img/goods3.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 4,
+        "img": "../../static/img/goods4.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 5,
+        "img": "../../static/img/goods5.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 6,
+        "img": "../../static/img/goods6.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 7,
+        "img": "../../static/img/goods7.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 8,
+        "img": "../../static/img/goods8.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 9,
+        "img": "../../static/img/goods9.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" },
+      {
+        "id": 10,
+        "img": "../../static/img/goods10.jpg",
+        "beforeprice": "￥7299",
+        "price": "￥2299",
+        "name": "口红" }] };
 
 
   },
