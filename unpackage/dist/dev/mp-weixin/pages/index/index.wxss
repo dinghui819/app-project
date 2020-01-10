@@ -1,0 +1,122 @@
+
+.home-swiper image{
+	width: 750rpx;
+	height: 350rpx;
+}
+/*  */
+.nav{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	/* justify-content: center; */
+}
+.nav-item{
+	width: 25%;
+	text-align: center;
+}
+.nav-item .icon{
+	color: #fff;
+	width: 120rpx;
+	height: 120rpx;
+	line-height: 120rpx;
+	border-radius: 50%;
+	font-size: 60rpx;
+	/* 设置左右居中 */
+	margin: 10rpx auto;
+	border: none;
+}
+.nav-item text{
+	/* display: block; */
+	font-size: 28rpx;
+}
+.nav-item:nth-child(1) .icon{	
+	background: -webkit-linear-gradient(bottom right, #fba789, #ee655f);	
+	background: linear-gradient(to top left, #fba789, #ee655f);
+}
+.nav-item:nth-child(2) .icon{
+	background: -webkit-linear-gradient(bottom right, #62e4ec, #6f88fa );
+	background: linear-gradient(to top left, #62e4ec, #6f88fa );
+}
+.nav-item:nth-child(3) .icon{
+	background: -webkit-linear-gradient(bottom right, #32e27f, #18a88b );
+	background: linear-gradient(to top left, #32e27f, #18a88b );
+}
+.nav-item:nth-child(4) .icon{
+	background: -webkit-linear-gradient(bottom right, #fbba37, #f6674f );
+	background: linear-gradient(to top left, #fbba37, #f6674f );
+}
+.nav-item:nth-child(5) .icon{
+	background: -webkit-linear-gradient(bottom right, #db7ae2, #9e42a5 );
+	background: linear-gradient(to top left, #db7ae2, #9e42a5 );
+}
+.nav-item:nth-child(6) .icon{
+	background: -webkit-linear-gradient(bottom right, #cbb694, #8f7762 );
+	background: linear-gradient(to top left, #cbb694, #8f7762 );
+}
+.nav-item:nth-child(7) .icon{
+	background: -webkit-linear-gradient(bottom right, #e88396, #bd2342 );
+	background: linear-gradient(to top left, #e88396, #bd2342 );
+}
+.nav-item:nth-child(8) .icon{
+	background: -webkit-linear-gradient(bottom right, #6ecaf4, #13a8eb );
+	background: linear-gradient(to top left, #6ecaf4, #13a8eb );
+}
+/* 推荐商品 */
+.hot-goods{
+	margin-top: 20rpx;
+	background: #eee;
+	overflow: hidden;/*解决背景色没出来的原因 */
+}
+.hot-goods .title{
+	height: 90rpx;
+	line-height: 90rpx;
+	background: #fff;
+	color: #000;
+	font-size: 40rpx;
+	font-weight: 600;
+	letter-spacing:8rpx;
+	margin: 10rpx 0;
+}
+.hot-goods .goods-lists{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	padding: 0 15rpx;
+}
+.hot-goods .goods-lists .goods-item{
+	width: 49%;
+	background: #fff;
+	margin: 10rpx 0;
+	padding: 15rpx;
+}
+.hot-goods .goods-item image{
+	width: 80%;
+	height: 150px;
+	/* 下面这两行代码，设置图片居中 */
+	display: block;
+	margin: auto;
+}
+.hot-goods .goods-item .price{
+	color: #ff2d52;
+	font-size: 36rpx;
+}
+.hot-goods .goods-item .price text:nth-child(2) {
+	color: #ccc;
+	font-size: 28rpx;
+	margin-left: 7rpx;
+	text-decoration: line-through;
+}
+.hot-goods .goods-item .goods-name{
+	font-size: 28rpx;
+	line-height: 50rpx;
+	padding-bottom: 15rpx;
+	padding-top: 10rpx;
+}
+
