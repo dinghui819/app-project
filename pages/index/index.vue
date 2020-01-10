@@ -8,7 +8,11 @@
 		</swiper>
 		<!-- 导航结构 -->
 		<view class="nav">
-			<view class="nav-item">
+			<view class="nav-item" v-for="(item,index) in navs" :key="item.index" @click="navItemClick(item.path)">
+				<view class="icon iconfont icon-mendianxianhuo_nor" :class="item.icon"></view>
+				<text>{{item.title}}</text>
+			</view>
+			<!--<view class="nav-item">
 				<view class="icon iconfont icon-remen"></view>
 				<text>热门销售</text>
 			</view>
@@ -16,7 +20,7 @@
 				<view class="icon iconfont icon-mendianxianhuo_nor"></view>
 				<text>店内现货</text>
 			</view>
-			<view class="nav-item">
+			 <view class="nav-item">
 				<view class="icon iconfont icon-food"></view>
 				<text>休闲食品</text>
 			</view>
@@ -39,42 +43,18 @@
 			<view class="nav-item">
 				<view class="icon iconfont icon-quanbufenlei"></view>
 				<text>全部分类</text>
-			</view>
+			</view> -->
 		</view>
 		<!-- 推荐商品 -->
 		<view class="hot-goods">
 			<view class="title">推荐商品</view>
-			<view class="goods-lists">
-				<view class="goods-item" v-for="item in goods" :key="item.id">
-					<image :src="item.img"></image>
-					<view class="price">
-						<text>{{item.price}}</text>
-						<text>{{item.beforeprice}}</text>
-					</view>
-					<view class="goods-name">{{item.name}}</view>
-				</view>
-				<!-- <view class="goods-item">
-					<image src="../../static/img/goods5.jpg"></image>
-					<view class="price">
-						<text>￥1299</text>
-						<text>￥2499</text>
-					</view>
-					<view class="goods-name">婴儿奶粉</view>
-				</view>
-				<view class="goods-item">
-					<image src="../../static/img/goods5.jpg"></image>
-					<view class="price">
-						<text>￥1299</text>
-						<text>￥2499</text>
-					</view>
-					<view class="goods-name">婴儿奶粉</view>
-				</view> -->
-			</view>
+			<goodsList :goods="goods"></goodsList>
 		</view>
 	</view>
 </template>
 
 <script>
+	import goodsList from '../../components/goods-list/goodsList.vue'
 	export default {
 		data() {
 			return {
@@ -149,8 +129,44 @@
 					"beforeprice":"￥7299",
 					"price":"￥2299",
 					"name":"口红"
-				},]
+				}],
+				navs:[{
+					icon:'iconfont icon-remen',
+					title: '热门销售',
+					path:'/pages/goods/goods'
+				},{
+					icon:'iconfont icon-mendianxianhuo_nor',
+					title: '店内现货',
+					path:'/pages/shops/shops'
+				},{
+					icon:'iconfont icon-food',
+					title: '休闲食品',
+					path:'/pages/foods/foods'
+				},{
+					icon:'iconfont icon-jiushuiyinliao',
+					title: '酒水饮料',
+					path:'/pages/water/water'
+				},{
+					icon:'iconfont icon-meironghufu',
+					title: '美容护肤',
+					path:'/pages/skin/skin'
+				},{
+					icon:'iconfont icon-chujingxinxianshuiguohanlengdongshuiguoguoyuanzhucedengji',
+					title: '新鲜水果',
+					path:'/pages/fruits/fruits'
+				},{
+					icon:'iconfont icon-riyongbaihuo',
+					title: '日用百货',
+					path:'/pages/dayuse/dayuse'
+				},{
+					icon:'iconfont icon-quanbufenlei',
+					title: '全部分类',
+					path:'/pages/allclassify/allclassify'
+				}]
 			}
+		},
+		components:{
+			goodsList
 		},
 		// 页面一加载就发送请求
 		onLoad() {
@@ -191,6 +207,20 @@
 			// 	})
 			// 	console.log(res)//打印出来是一个数组
 			// }
+			
+			// 导航点击
+			navItemClick (url) {
+				// 通过navigateTo来进行跳转
+				uni.navigateTo({
+					url
+				})
+				
+			},
+			
+			// // 传值
+			// 	sendGoods () {
+			// 		console.log("22")
+			// 	}
 		}
 	}
 </script>
@@ -266,7 +296,7 @@
 		letter-spacing:8rpx;
 		margin: 10rpx 0;
 	}
-	.hot-goods .goods-lists{
+	/* .hot-goods .goods-lists{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -277,15 +307,15 @@
 		background: #fff;
 		margin: 10rpx 0;
 		padding: 15rpx;
-	}
-	.hot-goods .goods-item image{
+	} */
+	/* .hot-goods .goods-item image{
 		width: 80%;
 		height: 150px;
-		/* 下面这两行代码，设置图片居中 */
+		/* 下面这两行代码，设置图片居中 
 		display: block;
 		margin: auto;
-	}
-	.hot-goods .goods-item .price{
+	} */
+	/* .hot-goods .goods-item .price{
 		color: #ff2d52;
 		font-size: 36rpx;
 	}
@@ -300,5 +330,5 @@
 		line-height: 50rpx;
 		padding-bottom: 15rpx;
 		padding-top: 10rpx;
-	}
+	} */
 </style>

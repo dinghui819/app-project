@@ -5,15 +5,33 @@
 		}
 	    ,{
             "path" : "pages/cart/cart",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"购物车"
+			}
         }
         ,{
             "path" : "pages/classify/classify",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"分类"
+			}
         }
         ,{
             "path" : "pages/mine/mine",
-            "style" : {}
+            "style" : {
+				"navigationBarTitleText":"我的"
+			}
+        }
+        ,{
+            "path" : "pages/goods/goods",
+            "style" : {
+				"navigationBarTitleText":"热门销售"
+			}
+        }
+        ,{
+            "path" : "pages/dayuse/dayuse",
+            "style" : {
+				"navigationBarTitleText":"日用百货"
+			}
         }
     ],
 	// 全局配置
