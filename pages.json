@@ -33,6 +33,12 @@
 				"navigationBarTitleText":"日用百货"
 			}
         }
+        ,{
+            "path" : "pages/allclassify/allclassify",
+            "style" : {
+				"navigationBarTitleText":"全部分类"
+			}
+        }
     ],
 	// 全局配置
 	"globalStyle": {

@@ -214,13 +214,13 @@
 				uni.navigateTo({
 					url
 				})
-				
+				this.$emit("goodsList", this.goods)
 			},
 			
-			// // 传值
-			// 	sendGoods () {
-			// 		console.log("22")
-			// 	}
+		// 传值
+			// hotGoods () {
+			// 	console.log("22")
+			// }
 		}
 	}
 </script>
@@ -234,7 +234,6 @@
 	.nav{
 		display: flex;
 		flex-wrap: wrap;
-		/* justify-content: center; */
 	}
 	.nav-item{
 		width: 25%;

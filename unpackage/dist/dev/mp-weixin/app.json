@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/cart/cart",
     "pages/classify/classify",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/goods/goods",
+    "pages/dayuse/dayuse",
+    "pages/allclassify/allclassify"
   ],
   "subPackages": [],
   "window": {

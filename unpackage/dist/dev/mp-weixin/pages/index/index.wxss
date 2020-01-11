@@ -10,7 +10,6 @@
 	display: flex;
 	-webkit-flex-wrap: wrap;
 	        flex-wrap: wrap;
-	/* justify-content: center; */
 }
 .nav-item{
 	width: 25%;
@@ -79,15 +78,10 @@
 	letter-spacing:8rpx;
 	margin: 10rpx 0;
 }
-.hot-goods .goods-lists{
-	display: -webkit-box;
-	display: -webkit-flex;
+/* .hot-goods .goods-lists{
 	display: flex;
-	-webkit-flex-wrap: wrap;
-	        flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	-webkit-justify-content: space-between;
-	        justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	padding: 0 15rpx;
 }
 .hot-goods .goods-lists .goods-item{
@@ -95,15 +89,15 @@
 	background: #fff;
 	margin: 10rpx 0;
 	padding: 15rpx;
-}
-.hot-goods .goods-item image{
+} */
+/* .hot-goods .goods-item image{
 	width: 80%;
 	height: 150px;
-	/* 下面这两行代码，设置图片居中 */
+	/* 下面这两行代码，设置图片居中 
 	display: block;
 	margin: auto;
-}
-.hot-goods .goods-item .price{
+} */
+/* .hot-goods .goods-item .price{
 	color: #ff2d52;
 	font-size: 36rpx;
 }
@@ -118,5 +112,5 @@
 	line-height: 50rpx;
 	padding-bottom: 15rpx;
 	padding-top: 10rpx;
-}
+} */
 
